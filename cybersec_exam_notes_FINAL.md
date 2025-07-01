@@ -5733,6 +5733,7 @@ sudo apt install armitage
 
 #### Definition of Ethics
 > "Ethics are a system of principles and rules concerning moral obligations and regard for the rights of others"
+- **Simple rule for ethics:** What we are interested in here is harm minimisation.
 
 #### Key Components
 - **Moral obligations**
@@ -5782,14 +5783,14 @@ sudo apt install armitage
 1. **System Exploration**
    - "Where is the harm in exploring a system you discovered open?"
    - **Considerations**: 
-     - Unintentional knowledge disclosure
-     - Creating attack vectors for others
-     - Modeling malicious behavior
+     - Unintentional knowledge disclosure (A breach of someone else's privacy)
+     - Creating attack vectors for others (You are showing people the way in)
+     - Modeling malicious behavior (You might go in and break something)
 
 2. **IoT Device Activation**
    - "Where is the harm in activating all network connectivity of household devices?"
    - **Considerations**:
-     - Privacy invasion
+     - Privacy invasion (Another back door into your home network)
      - Security vulnerabilities
      - Consent and ownership
 
@@ -5799,6 +5800,7 @@ sudo apt install armitage
      - Consent and transparency
      - Data ownership rights
      - Secondary use implications
+     - They might leak data about you
 
 4. **Digital Piracy**
    - "Where is the harm in copying music without paying?"
@@ -5881,6 +5883,9 @@ sudo apt install armitage
 - **International law variations**
 
 ### Key Takeaways
+
+### Data Privacy of Users
+- If you don't need it, you don't store it. If you do need it, you do store it. But if you do store it, you store it securely.
 
 #### Ethics Requires Exploration
 - **Complexity**: If resolution is simple, it's not truly an ethical dilemma
