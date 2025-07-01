@@ -4873,6 +4873,10 @@ push ecx                    ; Save ecx
 sub esp, 0x14               ; Allocate 20 bytes for local storage
 ```
 
+**Value Assignment**
+---
+![image](https://github.com/user-attachments/assets/4bdf3097-1783-4cec-b7f4-c0d25d75ba1c)
+
 **Standard Epilogue:**
 ```assembly
 mov ecx, DWORD PTR [ebp-0x4]    ; Restore saved values
@@ -4882,8 +4886,8 @@ ret                            ; Return to caller
 ```
 
 ---
-![image](https://github.com/user-attachments/assets/4bdf3097-1783-4cec-b7f4-c0d25d75ba1c)
-![image](https://github.com/user-attachments/assets/2dca0422-7e1a-4cc5-92a1-e572faa945f6)
+![image](https://github.com/user-attachments/assets/6bede42d-e578-40e8-9334-ec11576dc811)
+
 
 
 ## Static and Dynamic Analysis
@@ -6485,6 +6489,8 @@ admin'/*
 #### Disassembler vs Decompiler
 - **Disassembler**: Converts machine code to assembly language
 - **Decompiler**: Converts low-level code to high-level language
+- ![image](https://github.com/user-attachments/assets/c66c3347-057f-45ff-b0bc-8859855c6786)
+
 
 #### Tools
 - **Ghidra**: NSA-developed, Java-based, open source
