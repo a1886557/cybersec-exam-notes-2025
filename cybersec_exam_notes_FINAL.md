@@ -1549,6 +1549,8 @@ Network scanning is the active phase following reconnaissance and OSINT in ethic
 - Discovering known vulnerabilities
 - **Important**: Requires explicit authorization from target organization
 
+![image](https://github.com/user-attachments/assets/c9e62c9c-14a8-4648-9017-90fd8a5d8a80)
+
 ## Fundamental Networking Concepts
 
 ### OSI 5-Layer Model
@@ -1610,6 +1612,9 @@ Application Data → TCP Header + Data → IP Header + TCP Header + Data → Fra
   2. Root directs to TLD servers (.com, .edu, etc.)
   3. TLD directs to authoritative domain servers
   4. Domain server returns IP address
+     
+![image](https://github.com/user-attachments/assets/d7c31479-570b-4ec3-9c88-30dfe8f02461)
+
 
 #### DNS Record Types
 - **A**: Maps hostname to IPv4 address
@@ -2950,6 +2955,10 @@ sudo ettercap -G  # Launch GUI version
 4. Add gateway IP as "Target 2"
 5. Start ARP poisoning attack
 6. Monitor intercepted traffic and credentials
+
+---
+## DHCP
+![image](https://github.com/user-attachments/assets/be00f02e-0ec5-46ae-872d-963e63639d81)
 
 ---
 
@@ -4696,7 +4705,7 @@ Digital forensics encompasses much more than examining hard drives:
   - Source and destination machines
   - Protocol being used
   - Actual data being sent
-- **Network logs**: Records of network events that tell you something happened but don't contain the actual data
+- **Network logs**: Records of network events that tell you something happened over the network (like source, destination, protocol) but don't contain the actual data
 
 ### Network Forensics - Capturing Packets
 
@@ -5072,6 +5081,10 @@ cat File_B >> File_A          # Append File_B to end of File_A
 - **OllyDbg**: Windows debugger
 - **GDB**: GNU debugger
 - **x64dbg**: Modern Windows debugger
+
+### Disassembly
+- Converts machine code (binary form) to assembly language.
+- Disassembly can be used to analyse and understand how software works, even if the source code is not availble. (Software is proprietary or the source code is not publicly available)
 
 ---
 
@@ -6533,9 +6546,10 @@ admin'/*
 
 ### Forensic Tools for File Analysis
 - **file**: Determine file type
-- **hexdump**: View file in hexadecimal
+- **hexdump**: View file in hexadecimal (Searching for binary/hex/encoded strings)
 - **binwalk**: Identify embedded files in images
-- **dd**: Disk imaging and low-level copying
+- **exiftool**: Metadata in Image Files
+- **dd**: Disk imaging and low-level copying (File carving - manually extract sub-section of a file)
 
 ### Steganography
 - **Definition**: Art of hiding messages within other data
@@ -6549,8 +6563,8 @@ admin'/*
 - **Dynamic**: Run software and observe behavior
 
 #### Disassembler vs Decompiler
-- **Disassembler**: Converts machine code to assembly language
-- **Decompiler**: Converts low-level code to high-level language
+- **Disassembler**: Converts machine code (binary form) to assembly language
+- **Decompiler**: Converts low-level code to high-level language (Like C or C++ but mostly C)
 - ![image](https://github.com/user-attachments/assets/c66c3347-057f-45ff-b0bc-8859855c6786)
 
 
