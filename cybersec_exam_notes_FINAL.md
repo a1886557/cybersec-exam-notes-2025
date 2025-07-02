@@ -252,6 +252,8 @@ Hash Functions:
 
 **Definition**: The protection of systems and information from digital threats.
 
+"An ability to protect or defend the use of cyberspace from cyber attacks"
+
 **Key Components**:
 - **Protection**: Backups, patching, configuration, training, testing, detection, analysis, research
 - **Systems**: Computers, phones, networks, plant & equipment, vehicles
@@ -278,7 +280,7 @@ Modern society heavily relies on IT systems and software:
 - Bragging rights
 
 #### Ability
-- Point-and-click tools
+- Point-and-click tools (Free tools readily available)
 - Google anything
 - Dark Web marketplaces
 - Online anonymity
@@ -326,6 +328,11 @@ Modern society heavily relies on IT systems and software:
 - **Threat**: Potential for violation of security (malware infections, data breaches, DoS attacks)
 - **Vulnerabilities**: Flaws or weaknesses in system design, implementation, or operation that could be exploited
 
+### Bad Guys are winning. Why?
+1. Asymmetric Forces
+2. Insecure Software
+3. Humans Remain Vulnerable
+
 ### Asymmetric Forces (Why Bad Guys Are Winning)
 
 | Factor | Good Guys | Bad Guys |
@@ -334,6 +341,11 @@ Modern society heavily relies on IT systems and software:
 | **Money** | Limited budget | Nation states/crime groups can provide $$ |
 | **Laws** | Must abide by laws | Happy to break any laws |
 | **Success Factor** | Must prevent ALL incidents ALL the time | Only need to find ONE weakness |
+
+### To Err is Human
+- "If you tyhink technology can solve your security problems, then you don't understand the problems and you don't understand the technology."
+  
+![image](https://github.com/user-attachments/assets/936110a2-6477-4434-994a-e97444d6b8a4)
 
 ### Hacker Hat Colors
 
@@ -367,6 +379,29 @@ Modern society heavily relies on IT systems and software:
 - Ransomware most prevalent threat
 - Phishing most common attack vector
 - AI-powered attacks emerging
+
+#### Brief History of Hacking
+- 1939: Alan Turing and others worked on a machine that brute-forced the Enigma machine
+- 1979: Kevin Mitnick (16) breaks into DEC and steals source code to VAX VMS
+- 1986: First remote computer intrusion in history. Clifford Stoll at (Lawrence Berkeley National Laboratory in California.) helped to capture the malicious hacker.
+- 1988: Graduate, Robert Morris, wrote a program to gauge the size of the internet and it "got out". One of the first worms. Infected 2000 UNIX machines within 15 hours.
+- 2003 Hacktivist group Anonymous formed. Many notable DDOS attacks.
+- 2016: IoT Botnet (Mirai) - A massive and sustained Internet attack that has caused outages and network congestion ... with the help of hacked "Internet of Things" (IoT) devices, such as CCTV video cameras and digital video recorders.
+
+#### What makes great cyber security people?
+
+There are some traits that are important for becoming a GOOD cybersecurity specialist and a "hacker" (in the traditional sense) including:
+- **Great generalist** - know everything from OS design, coding, cryptographic systems, modern protocols, systems architecture, computer networking, storage, etc.
+- **Lateral thinking** - thinking outside the box to "hack" or come up with clever shortcuts
+- **Logical thinking** - ability to string together reasons to arrive at the right answer quickly and consistently
+- **Adversarial thinking** - thinking like the bad guys
+- **Solid ethical foundation** - focusing on using powers for good
+- **Patience and persistence** - e.g., when performing penetration testing
+- **Ability to work under pressure** - e.g., during attack or incident response
+- **Communication and business knowledge** - ability to translate technical risks to real business impact
+- **Risk-savvy** - ability to translate phenomena into quantifiable risks in an objective fashion while understanding cognitive biases
+- **Autodidactic** - ability to continue to self-educate and improve + stay motivated
+
 
 ---
 
@@ -428,11 +463,20 @@ Attack: Frequency analysis
 - Key dictates number of columns and ordering
 
 ### Kerckhoffs's Principle
-1. Encryption scheme should be open (don't rely on security by obscurity)
-2. Only the secret key should be kept secret  
-3. Should be easy to change keys (in case of compromise)
+1. Encryption scheme should be open (don't rely on security by obscurity) *
+2. Only the secret key should be kept secret *
+3. Should be easy to change keys (in case of compromise) *
+4. The system must be practically, if not mathematically, indecipherable.
+5. It must not be required to be secret, and it must be able to fall into the hands of the enemy without inconvenience.
+6. Its key must be communicable and retainable without the help of written notes, and changeable or modifiable at the will of the correspondents.
+7. It must be applicable to telegraphic correspondence.
+8. Apparatus and documents must be portable, and its usage and function must not require the concourse of several people.
+9. Finally, it is necessary, given the circumstances that command its application, that the system be easy to use, requiring neither mental strain nor the knowledge of a long series of rules to observe.
 
 **Shannon's Maxim**: Don't rely on security through obscurity
+
+### Another important rule-of-thumb is:
+- Do not invent your own encryption scheme -- use ones that have survived the test of time and public scrutiny.
 
 ---
 
@@ -677,8 +721,9 @@ Hash: bcrypt(salt + password, cost_factor)
 
 ### Salting Benefits
 - **Different salts** → same passwords produce different hashes
-- **Makes rainbow tables impractical** (need table for each salt)
-- **Doesn't prevent brute force** on individual passwords
+- **Makes rainbow tables impractical** (need table for each salt) (x2^12)
+- **Doesn't prevent brute force** on individual passwords (Nor reduce computational difficulty of cracking one password)
+- **Doesn't prevent replay attacks** (Pass the hash)
 - **Salt can be stored in plaintext**
 
 ### Key Stretching (Slow Hashing)
@@ -1052,7 +1097,9 @@ Remember: **Cryptography is difficult to implement correctly - always use well-t
 
 #### 4. **Exploitation**
 **Methods:**
-- **Automated exploitation**: Metasploit, SQLMap, Exploit DB, POC codes
+- **Automated exploitation**: Metasploit, SQLMap,
+- **Exploit DB**
+- **POC codes**
 - **Manual exploitation**: Custom attacks
 - **Social engineering/physical**: Human-factor attacks
 
@@ -1180,6 +1227,19 @@ CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
 - Higher impact scores indicate more severe consequences
 - Scope changes significantly affect scoring when attacks impact beyond the vulnerable component
 
+![image](https://github.com/user-attachments/assets/b9d70ad2-0f32-48cf-a05e-33e6469fd2fc)
+![image](https://github.com/user-attachments/assets/d5a24b8b-92ce-4215-ad95-1545ba42f1eb)
+![image](https://github.com/user-attachments/assets/c8a8e53f-e149-4a86-aa64-0c36c914efa5)
+![image](https://github.com/user-attachments/assets/4f3c7a0d-38fb-4f90-b49e-a433dfcca4c7)
+![image](https://github.com/user-attachments/assets/f24f4bf4-8ec4-4f39-9b45-5ed6479f37ab)
+![image](https://github.com/user-attachments/assets/24625d1a-14ab-42af-ad87-7005cb20e947)
+
+
+#### Calculating CVSS
+- Weightings and an equation exist to calculate the score but most people use the calculator
+![image](https://github.com/user-attachments/assets/4bf57f18-ab4c-457b-8c7d-87d1cec80281)
+
+
 ### CWE (Common Weakness Enumeration)
 - **URL**: https://cwe.mitre.org  
 - **Maintained by**: Mitre Corporation
@@ -1239,6 +1299,8 @@ CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
 - **SOC 1**: Internal controls over financial reporting
 - **SOC 2**: Security, availability, processing integrity, confidentiality, privacy controls
 - **SOC 3**: Public version of SOC 2 reports
+  
+![image](https://github.com/user-attachments/assets/35ed679e-18b9-4738-bd6a-2a41f1c09831)
 
 ---
 
@@ -6196,7 +6258,7 @@ hashcat -m 0 hash.txt -r /usr/share/hashcat/rules/best64.rule wordlist.txt
 ### Symmetric vs Asymmetric Cryptography
 
 #### Symmetric Cryptography
-- **Challenge**: Key distribution problem - how to securely share the secret key
+- **Challenge**: Key distribution problem - how to securely share the secret key (For N people, N!/2 number of keys required - Exponentially increases)
 - **Algorithms**: AES, DES, 3DES
 - **Modes**: ECB (insecure, shows patterns), CBC (secure, chains blocks)
 - **Use Cases**: Bulk data encryption, fast encryption/decryption
@@ -6711,7 +6773,7 @@ printf("%s", user_input);
 
 #### Symmetric Encryption
 - **Same key** for encryption and decryption
-- **Problem**: Key distribution challenge
+- **Problem**: Key distribution challenge (For N people, N!/2 number of keys required - Exponentially increases)
 - **Algorithms**: AES, DES, 3DES
 - **Use**: Fast bulk encryption
 
